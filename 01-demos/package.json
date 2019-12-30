@@ -6,9 +6,11 @@
   "dependencies": {
     "webpack-cli": "^3.3.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^4.41.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack src/index.js"
   },
   "author": "pdc",
   "license": "ISC"
