@@ -54,9 +54,9 @@ class Compiler {
     const info = this.build(this.entry)
     this.modules.push(info)
     this.modules.forEach(({ dependencies }) => {
-      // 判断有依赖的对象，递归解析所有依赖项
+      // 判断有依赖的对象,递归解析所有依赖项
       if (dependencies) {
-        for (const dependcies in dependencies) {
+        for (const dependencies in dependencies) {
           this.modules.push(this.build(dependencies[dependency]))
         }
       }
