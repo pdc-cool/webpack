@@ -80,7 +80,7 @@ class Compiler {
     const dependencies = getDependencies(ast, filename)
     const code = getCode(ast)
     return {
-      // 文件路径, 可以作为每个模块的唯一标识符
+      // 文件路径,可以作为每个模块的唯一标识符
       filename,
       // 依赖对象,保存着依赖模块路径
       dependencies,
