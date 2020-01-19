@@ -97,7 +97,6 @@ module.exports = {
         <img src="smallpic.png">
         会被编译成
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA...">
-
         而
         <img src="largepic.png">
         会被编译成
