@@ -81,6 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
+          /**
+           * 
+           * 
+           * 
+           * mark：__webpack_require__.s = "./src/index.js"
+           *    1.先把 "./src/index.js" 字符串赋值给 __webpack_require__.s
+           *    2.再把 (__webpack_require__.s = "./src/index.js") 的值传递给 __webpack_require__ 函数
+           *      因为赋值运算的结果等于等号右边的值，即 "./src/index.js"
+           */
 /******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
