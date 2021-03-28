@@ -35,6 +35,7 @@
 /******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
+            // exports 中不存在 name，即给 exports 添加 name 属性
 /******/ 		if(!__webpack_require__.o(exports, name)) {
 /******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
 /******/ 		}
@@ -74,6 +75,7 @@
 /******/ 	};
 /******/
 /******/ 	// Object.prototype.hasOwnProperty.call
+          // 判断对象自身可存在指定属性
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
